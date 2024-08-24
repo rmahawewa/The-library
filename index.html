@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="container-div">
+        <div class="header">
+            <h1>Library</h1>
+        </div>
+        <div class="add-book">
+            <h3>Add book details</h3>
+            <form action="#">
+                <div class="form-group">
+                    <label for="">Book name</label>
+                    <input type="text" id="book_name">
+                </div>
+                <div class="form-group">
+                    <label for="">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="">Number of pages</label>
+                    <input type="text" id="number_of_pages">
+                </div>
+                <div class="form-group has-read">
+                    <p>I
+                    <label class="switch">
+                        <input type="checkbox" id="is_read">
+                        <span class="slider round"></span>
+                    </label>
+                    read this book</p>
+                </div>
+                <div class="btns">
+                    <button type="submit" name="submit-btn" id="submit-button">submit</button>
+                    <button type="clear" name="clear-btn" id="clear-button">clear</button>
+                </div>                
+            </form> 
+        </div>
+        <div class="book-list">
+            
+    
+        </div>
+        <div class="footer">
+            <p>Thank you</p>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
