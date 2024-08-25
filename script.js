@@ -39,9 +39,11 @@ function addBookToLibrary(){
     const number_of_pages = document.querySelector("#number_of_pages").value;
     const is_read = document.querySelector("#is_read").value;
 
-    let b = new Book(book_name, author, number_of_pages, is_read, count);
-    myLibrary.push(b);
-    count++;
+    if(book_name.toString().length > 0 && author.toString().length > 0 && number_of_pages.toString().length > 0){
+        let b = new Book(book_name, author, number_of_pages, is_read, count);
+        myLibrary.push(b);
+        count++;
+    }    
 }
 
 function add_new_book(bk){
