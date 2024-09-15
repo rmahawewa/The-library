@@ -24,13 +24,23 @@ function make_view(){
     myLibrary.map(add_new_book);
 }
 
-function Book(book_name, author, number_of_pages, is_read, code){
-    this.book_name = book_name;
-    this.author = author;
-    this.number_of_pages = number_of_pages;
-    this.is_read = is_read;
-    this.code = code;
+// function Book(book_name, author, number_of_pages, is_read, code){
+//     this.book_name = book_name;
+//     this.author = author;
+//     this.number_of_pages = number_of_pages;
+//     this.is_read = is_read;
+//     this.code = code;
 
+// }
+
+class Book{
+    constructor(book_name, author, number_of_pages, is_read, code){
+        this.book_name = book_name;
+        this.author = author;
+        this.number_of_pages = number_of_pages;
+        this.is_read = is_read;
+        this.code = code;
+    }
 }
 
 function addBookToLibrary(){
